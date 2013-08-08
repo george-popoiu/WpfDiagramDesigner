@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:WpfDiagramDesigner">
+    
+    <ControlTemplate x:Key="ResizeDecoratorTemplate" TargetType="Control">
+        <Grid>
+            <s:ResizeThumb VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="3" Margin="0 -4 0 0"
+                           Cursor="SizeNS"/>
+            <s:ResizeThumb VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Height="3" Margin="0 0 0 -4"
+                           Cursor="SizeNS"/>
+            <s:ResizeThumb VerticalAlignment="Stretch" HorizontalAlignment="Left" Width="3" Margin="-4 0 0 0"
+                           Cursor="SizeWE"/>
+            <s:ResizeThumb VerticalAlignment="Stretch" HorizontalAlignment="Right" Width="3" Margin="0 0 -4 0"
+                           Cursor="SizeWE"/>
+            
+            <s:ResizeThumb VerticalAlignment="Top" HorizontalAlignment="Left" Width="6" Height="6" Margin="-7 -7 0 0"
+                           Cursor="SizeNWSE"/>
+            <s:ResizeThumb VerticalAlignment="Top" HorizontalAlignment="Right" Width="6" Height="6" Margin="0 -7 -7 0"
+                           Cursor="SizeNESW"/>
+            <s:ResizeThumb VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="6" Height="6" Margin="-7 0 0 -7"
+                           Cursor="SizeNESW"/>
+            <s:ResizeThumb VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="6" Height="6" Margin="0 0 -7 -7"
+                           Cursor="SizeNWSE"/>
+        </Grid>
+    </ControlTemplate>
+    
+</ResourceDictionary>

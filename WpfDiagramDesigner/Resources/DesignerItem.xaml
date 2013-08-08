@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:WpfDiagramDesigner">
+    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="MoveThumb.xaml"/>
+        <ResourceDictionary Source="ResizeDecorator.xaml"/>
+        <ResourceDictionary Source="RotateDecorator.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+    <Style x:Key="DesignerItemStyle" TargetType="ContentControl">
+        <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>        
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+                    <Grid DataContext="{Binding RelativeSource={RelativeSource TemplatedParent}}">
+                        <Control Template="{StaticResource RotateDecoratorTemplate}"/>
+                        <s:MoveThumb Cursor="SizeAll" Template="{StaticResource MoveThumbTemplate}"/>
+                        <Control Template="{StaticResource ResizeDecoratorTemplate}"/>                        
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" Margin="5"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+       
+    
+</ResourceDictionary>

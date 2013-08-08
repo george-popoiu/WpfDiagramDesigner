@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:WpfDiagramDesigner">
+    
+    <ControlTemplate TargetType="s:MoveThumb" x:Key="MoveThumbTemplate">
+        <Rectangle Fill="Transparent"/>
+    </ControlTemplate>
+    
+</ResourceDictionary>

@@ -4,17 +4,15 @@
 winexe
 C#
 .cs
-D:\workspace\conti\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\
 WpfDiagramDesigner
 none
 false
 DEBUG;TRACE
-D:\workspace\conti\WpfDiagramDesigner\WpfDiagramDesigner\App.xaml
-51342067668
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\App.xaml
+7-1195741798
 
-8-1133904879
-8-1526339574
-MainWindow.xaml;Resources\DesignerItem.xaml;Resources\MoveThumb.xaml;Resources\ResizeDecorator.xaml;Resources\RotateDecorator.xaml;
-
-False
+12-964483082
+81442313859
+MainWindow.xaml;Resources\DesignerItem.xaml;Resources\MoveThumb.xaml;Resources\Objects.xaml;Resources\ResizeDecorator.xaml;Resources\RotateDecorator.xaml;Resources\Toolbox.xaml;
 

@@ -8,17 +8,27 @@
         <ResourceDictionary Source="RotateDecorator.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="DesignerItemStyle" TargetType="ContentControl">
+    <Style x:Key="DesignerItemStyle" TargetType="s:DesignerItem">
         <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>        
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="ContentControl">
+                <ControlTemplate TargetType="s:DesignerItem">
                     <Grid DataContext="{Binding RelativeSource={RelativeSource TemplatedParent}}">
-                        <Control Template="{StaticResource RotateDecoratorTemplate}"/>
-                        <s:MoveThumb Cursor="SizeAll" Template="{StaticResource MoveThumbTemplate}"/>
-                        <Control Template="{StaticResource ResizeDecoratorTemplate}"/>                        
+                        
+                        
+                        <s:MoveThumb x:Name="PART_MoveThumb" Cursor="SizeAll" Template="{StaticResource MoveThumbTemplate}"/>
+
+                        <Control Template="{StaticResource RotateDecoratorTemplate}" Name="PART_RotateDecorator" Visibility="Collapsed"/>
+                        <Control Template="{StaticResource ResizeDecoratorTemplate}" Name="PART_ResizeDecorator" Visibility="Collapsed"/>                        
+                        
                         <ContentPresenter Content="{TemplateBinding ContentControl.Content}" Margin="5"/>
                     </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="PART_RotateDecorator" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="PART_ResizeDecorator" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

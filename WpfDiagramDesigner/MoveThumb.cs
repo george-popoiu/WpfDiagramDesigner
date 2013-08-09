@@ -14,20 +14,41 @@ using System.Windows.Shapes;
 
 namespace WpfDiagramDesigner {
     public class MoveThumb : Thumb {
+        DesignerItem designerItem;
+        DesignerCanvas designerCanvas;
 
         public MoveThumb() {
             DragDelta += new DragDeltaEventHandler(MoveThumb_DragDelta);
+            DragStarted += new DragStartedEventHandler(MoveThumb_DragStarted);
+        }
+
+        void MoveThumb_DragStarted(object sender, DragStartedEventArgs e) {
+            designerItem = this.DataContext as DesignerItem;
+
+            if (designerItem != null) {
+                designerCanvas = VisualTreeHelper.GetParent(designerItem) as DesignerCanvas;
+            }
         }
 
         void MoveThumb_DragDelta(object sender, DragDeltaEventArgs e) {
-            var item = this.DataContext as Control;
+            var designerItem = this.DataContext as ContentControl;
 
-            if (item != null) {
-                double left = Canvas.GetLeft(item);
-                double top = Canvas.GetTop(item);
+            if (designerItem != null && designerCanvas != null) {
+                double left = Canvas.GetLeft(designerItem);
+                double top = Canvas.GetTop(designerItem);
 
-                Canvas.SetLeft(item, left + e.HorizontalChange);
-                Canvas.SetTop(item, top + e.VerticalChange);
+                Point dragDelta = new Point(e.HorizontalChange, e.VerticalChange);
+
+                var rotateTransform = designerItem.RenderTransform as RotateTransform;
+                if (rotateTransform != null) {
+                    dragDelta = rotateTransform.Transform(dragDelta);
+                }
+
+                Canvas.SetLeft(designerItem, left + dragDelta.X);
+                Canvas.SetTop(designerItem, top + dragDelta.Y);
+
+                designerCanvas.InvalidateMeasure();
+                e.Handled = true;
             }
         }
 

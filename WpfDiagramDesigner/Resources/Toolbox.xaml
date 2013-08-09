@@ -1,0 +1,55 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:WpfDiagramDesigner">
+    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Objects.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+    <Style TargetType="s:ToolboxItem">
+        <Setter Property="ContentControl.Padding" Value="3"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="s:ToolboxItem">
+                    <Grid>
+                        <Rectangle Fill="Transparent" Stroke="LightGray" Visibility="Hidden" Name="PART_Rect"/>
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}"
+                                          Margin="{TemplateBinding ContentControl.Padding}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="PART_Rect"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>                
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <s:Toolbox x:Key="itemsToolbox" DefaultItemSize="40, 30">
+        
+        <s:Toolbox.Items>
+            
+            <Control Template="{StaticResource FunctionObjectTemplate}"/>            
+            <Control Template="{StaticResource TestObjectTemplate}" />
+            
+        </s:Toolbox.Items>
+        
+        <s:Toolbox.Style>
+            <Style TargetType="s:Toolbox">
+                <Setter Property="ItemsPanel">
+                    <Setter.Value>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Margin="3" 
+                                       ItemHeight="{Binding Path=DefaultItemSize.Height, RelativeSource={RelativeSource AncestorType=s:Toolbox}}"
+                                        ItemWidth="{Binding Path=DefaultItemSize.Width, RelativeSource={RelativeSource AncestorType=s:Toolbox}}"/>
+                        </ItemsPanelTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </s:Toolbox.Style>
+        
+    </s:Toolbox>
+
+</ResourceDictionary>

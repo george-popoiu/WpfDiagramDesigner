@@ -17,3 +17,25 @@ D:\workspace\conti\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\WpfDiagramDes
 D:\workspace\conti\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\Resources\MoveThumb.baml
 D:\workspace\conti\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\Resources\ResizeDecorator.baml
 D:\workspace\conti\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\Resources\RotateDecorator.baml
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\bin\Debug\WpfDiagramDesigner.exe.config
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\WpfDiagramDesigner.exe
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\WpfDiagramDesigner.pdb
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\bin\Debug\WpfDiagramDesigner.exe
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\bin\Debug\WpfDiagramDesigner.pdb
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\MainWindow.baml
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\MainWindow.g.cs
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\App.g.cs
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\WpfDiagramDesigner_MarkupCompile.cache
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\WpfDiagramDesigner_MarkupCompile.lref
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\Resources\DesignerItem.baml
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\Resources\MoveThumb.baml
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\Resources\ResizeDecorator.baml
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\Resources\RotateDecorator.baml
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\WpfDiagramDesigner.g.resources
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\WpfDiagramDesigner.Properties.Resources.resources
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\ResGen.read.1.tlog
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\ResGen.write.1.tlog
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\Resources\Toolbox.baml
+C:\Users\uidw7654\Documents\Visual Studio 2010\Projects\WpfDiagramDesigner\WpfDiagramDesigner\obj\Debug\Resources\Objects.baml
